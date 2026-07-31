@@ -1,0 +1,18 @@
+JavaScript is used for functionality(on,off,close,open...)
+
+Script is a process or language or function which run with another language it can't be run 
+individually(additional embedded)
+
+can be declared either in head or body but according formatting do in body
+
+console.log: log is iteration log doesn't work on client it works on development
+
+document.write: conten area(white area)
+
+alert:when browser reload then a pop up on the top
+why it works on only reload?-> Refreshing wipes out device memory variables, so if your code uses a fresh 
+start to test a condition, it trips the trigger again.
+
+object oriented top to bottom
+class oriented bottom to top
+dom prioritize alert instead of console.log
