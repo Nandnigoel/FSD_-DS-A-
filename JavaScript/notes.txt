@@ -16,3 +16,8 @@ start to test a condition, it trips the trigger again.
 object oriented top to bottom
 class oriented bottom to top
 dom prioritize alert instead of console.log
+
+3 types of generic datatype:
+    1.
+    2.
+    3.
