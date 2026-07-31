@@ -18,6 +18,27 @@ class oriented bottom to top
 dom prioritize alert instead of console.log
 
 3 types of generic datatype:
-    1.
-    2.
-    3.
+    1.const -> can't intialize same variable again. Can't be change or re-declared
+    2.var (pick last value of var)-> It overwrite the identifier
+    3.let-> to reduce problem of var but it can be change or re-declared that's why it is different from 
+            const.
+Question: let a=12;
+          var a=20;
+    Ans: Can't run because var say one identifier initialzize once. Same with const.
+Ques: which has high priority among let,var and const and why?
+Ans:In JavaScript, const has the highest priority (best practice), followed by let, while var has the 
+    lowest priority and should be avoided.
+    because const has:
+        Immutability: It prevents accidental changes. Once you assign a value, it cannot be reassigned.
+        Security: It protects your data from being overwritten by other parts of the script.
+        Readability: When other developers read your code, const tells them immediately that this value 
+                     stays constant.
+    let has:
+        Block Scope: It only lives inside the curly braces {} where it is defined (like inside an if 
+                     statement or a loop).
+        Flexibility: It allows reassignment but prevents the bugs caused by var.
+    var has:
+        No Block Scope: It leaks outside of loops and if statements, causing unexpected bugs.
+        Hoisting Issues: You can use a var variable before you even declare it in the code, which leads to 
+                         confusing errors.
+        Global Pollution: It easily attaches itself to the global window object.
