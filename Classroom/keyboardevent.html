@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event</title>
+</head>
+<body>
+    <p>Enter characters by pressing any key</p>
+    <!-- <input type="text" onkeydown="customizeInput()"> -->
+    <input type="text" onkeyup="customizeInput()">
+    <input type="text" placeholder="Click here">
+    <script>
+        function customizeInput(){
+            var ele=document.getElementsByTagName("input")[0];
+            ele.style.backgroundColor="yellow";
+            ele.style.color="red";
+        }
+        const x=document.querySelector("input");
+    </script>
+</body>
+</html>
