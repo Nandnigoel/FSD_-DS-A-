@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // create object
+        const student={
+            name:"Nandni",
+            class:"B.Tech",
+            fee:128600
+        }
+        // console.log(student);
+        document.write(student);
+        document.write("<br/>");
+        // document.write("<br/>"+student.name);
+        // document.write("<br/>"+student.class);
+        // document.write("<br/>"+student.fee);
+        for(let key in student){
+            document.write(key+":"+student[key]+"<br/>");
+        }
+    </script>
+</body>
+</html>

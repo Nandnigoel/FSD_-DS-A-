@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-container {
+            border: 2px solid #333;
+            padding: 15px;
+            width: 280px;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            border-radius: 6px;
+        }
+        .item-row {
+            background-color: #e2e8f0;
+            margin-bottom: 6px;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .total-row {
+            margin-top: 12px;
+            padding-top: 8px;
+            border-top: 2px dashed #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div id="items-list"></div>
+        <div id="total-amount" class="total-row"></div>
+    </div>
+    <script>
+        const items={
+            tea:450,
+            coffee:600,
+            sugar:700,
+            pulses:100
+        }
+        let itemsHTML = "";
+        for(let item in items){
+           itemsHTML += `<div class="item-row">${item}: ${items[item]}</div>`;
+        }
+        document.getElementById("items-list").innerHTML = itemsHTML;
+        const product=prompt("Enter your Product");
+        const amount=prompt("Enter your Quantity");
+        let found=false;
+        for(let item in items){
+            if(item==product){
+                let total=items[item]*amount;
+                document.getElementById("total-amount").innerText = "Total Amount: " + total;
+                found=true;
+            }
+        }
+        if(!found){
+            document.getElementById("total-amount").innerText = "Product Not Found!";
+        }
+    </script>
+</body>
+</html>

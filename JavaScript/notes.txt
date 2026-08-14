@@ -42,3 +42,14 @@ Ans:In JavaScript, const has the highest priority (best practice), followed by l
         Hoisting Issues: You can use a var variable before you even declare it in the code, which leads to 
                          confusing errors.
         Global Pollution: It easily attaches itself to the global window object.
+
+JSON-> to store object because array doesn't provide to store obj. Key:value pair
+datatype JSONname={
+    key:value
+}
+format stored in array i.e [ ], 
+[object Object]->object:datatype,
+                 Object:type of object;
+    For...in loop
+The for...in loop iterates over all the keys (properties) of an object one by one. You use bracket 
+notation [key] to get the corresponding value.
