@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const database=[
+        //     {name:"Nandni Goel",Course:"B.tech",fee:128600},
+        //     {name:"Saloni Agarwal",Course:"B.tech",fee:128600},
+        //     {name:"Yashika Sharma",Course:"M.tech",fee:253600},
+        //     {name:"Ananya Sharma",Course:"M.tech",fee:253600},
+        //     {name:"Avni Goel",Course:"10th",fee:16800},
+        //     {name:"Pranav Goel",Course:"10th",fee:16800}
+        // ]
+        const database=[];
+        const n=prompt("Enter number of students:");
+        for(let i=0;i<n;i++){
+            let name=prompt("Enter student name:");
+            let course = prompt("Enter course:");
+            let fee = Number(prompt("Enter fee:"));
+            database.push({
+                name:name,
+                Course:course,
+                fee: fee
+            });
+        }
+        const BTechStudents=database.filter(({Course})=>(Course=="B.tech"));
+        const BTechNames=BTechStudents.map(student=>student.name);
+        console.log(BTechNames);
+    </script>
+</body>
+</html>
