@@ -103,3 +103,17 @@ Need:
     •Merges Data Easily
     •Converts Lists to Arguments
 
+Sync:•Line-by-line, sequential order.
+     •Blocking. Next line waits for the current one.
+     •Basic logic, math, data mapping.
+     •Can cause UI lag or freeze if slow.
+
+Async:•Tasks run independently in the background.
+      •Non-blocking. Code keeps moving forward.
+      •API calls, timers, reading files.
+      •Smooth UI; data loads seamlessly.
+Use setTimeout
+
+Callback:A callback function is a function passed as an argument into another function, to be executed 
+         later.
+Callback Hell:Callback Hell occurs when multiple asynchronous operations are nested inside one another.
